@@ -88,5 +88,7 @@ git push origin --delete summer //删除summer这个分支
 ----结束----
 
 ----不同的人修改了相同的文件怎么处理
-
+git config --local --add --local user.name 'xiaoming'
+git config --local --add --local user.email '3333@qq.com'
+git branch -av 仓库之间关系
 ----处理----
