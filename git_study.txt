@@ -40,5 +40,30 @@ git checkout commit编码 文件路径/文件名
 ---------------结束-------------- 
 
 ----想要修改内容之后推送至远程仓库时如何进行操作
+git push -u origin master
+
+git push origin master
+----结束----
+
+----创建标签
+git tag v1.0 加在最近的commit上面
+git tag v0.5 commitID 在确定版本ID上面加版本
+git tag -d v0.5 删除标签
+git push origin v1.0 推送标签
+----结束----
+
+----创建，切换，删除分支操作
+git branch dev 创建分支dev
+git branch 查看分支，带*的是当前你所在的分支
+git checkout dev 切换到dev分支
+git branch -d/D dev 删除dev分支//如果分支上面已经提交了东西,需要用D来强制删除。
+git checkout -b test 创建并跳转到test分支
+----结束----
+
+----合并分支
+git merge dev
+----结束----
+
+----如何解决合并分支的冲突
 
 ----结束----
